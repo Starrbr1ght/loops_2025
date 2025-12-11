@@ -1,43 +1,61 @@
 
-# # **Python Practice Problems (No Code Included)
+# # # **Python Practice Problems (No Code Included)
 
-# **Directions:** Solve each problem by writing your own Python code. Show outputs where required.
-
-
-# ### **Problem 1: Print Numbers 1 to 10
-list1to10= list(range(1,11))
-# Write a program that prints the numbers from **1 to 10**, each on a new line.
-for number in  list1to10:
-    print(number)
+# # **Directions:** Solve each problem by writing your own Python code. Show outputs where required.
 
 
-# ### **Problem 2: Sum of Numbers
-n = int(input("enter a number: "))
-total_sum=0
-for number in range(1, n+1):
-    total_sum += number
-
-print("the sum of numbers from 1 to", n,"is:", total_sum)
-# Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
+# # ### **Problem 1: Print Numbers 1 to 10
+# # list1to10= list(range(1,11))
+# # # Write a program that prints the numbers from **1 to 10**, each on a new line.
+# # for number in  list1to10:
+# #     print(number)
 
 
+# # # ### **Problem 2: Sum of Numbers
+# # n = int(input("enter a number: "))
+# # total_sum=0
+# # for number in range(1, n+1):
+# #     total_sum += number
 
-# ### **Problem 3: Factorial Calculator
-
-# Ask the user for a number **n**, then calculate the **factorial** of that number.
-
-# *(Example: factorial of 5 is 120)
+# # print("the sum of numbers from 1 to", n,"is:", total_sum)
+# # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
 
 
-# ### **Problem 4: Count Vowels**
+
+# # ### **Problem 3: Factorial Calculator
+
+# # Ask the user for a number **n**, then calculate the **factorial** of that number.
+# def factorial(n):
+#     factorial=1
+#     for i in range(n):
+#         factorial*= i+1
+
+#     return factorial
+# print(factorial(50))
+
+# # *(Example: factorial of 5 is 120)
+
+
+# # ### **Problem 4: Count Vowels**
 
 # Ask the user for a string. Count and print how many **vowels (a, e, i, o, u)** are in the string.
 
 
-# ### **Problem 5: Print Even Numbers**
+# # ### **Problem 5: Print Even Numbers**
 
-# Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+# # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+n = int(input("please put in a number:"))
+print("even numbers fron 2 to", n, ":")
+for number in range (2, n+1, 2):
+    print(number)
 
+list_even_numbers= list(range(1, 45))
+for number in list_even_numbers:
+    if number % 2==0:
+        print(number)
+else:
+    print("odd number, skipping", number)
+    
 
 
 # ### **Problem 6: Reverse a String**
